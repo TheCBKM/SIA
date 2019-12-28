@@ -1,4 +1,5 @@
 let bot
+let chats=[]
 function preload() {
     bot = new RiveScript();
     bot.loadFile("brain.rive", brainReady, brainError);
@@ -28,6 +29,14 @@ function setup() {
                   </div>
                 </div>
               </div>`
+              reply =await bot.reply("local-user", a.value)
+              ch ={
+                  reply,
+                  ques:a.value
+              }
+              axios.post('/reply',ch)
+              console.log(ch)
+              chats.push(ch)
                 chat.innerHTML += `      <div class="msg left-msg">
     <div class="msg-img" style="background-image: url(https://image.flaticon.com/icons/svg/327/327779.svg)"></div>
     
@@ -38,7 +47,7 @@ function setup() {
     </div>
     
     <div class="msg-text">
-    ${(await bot.reply("local-user", a.value))}
+    ${reply}
     </div>
     </div>
     </div>`

@@ -10,19 +10,19 @@
 
 // Bot Variables
 ! var name     = Sia
-! var fullname = Aiden Rive
-! var age      = 5
-! var birthday = October 12
+! var fullname = Simulation of Inteligene is Art
+! var age      = 1
+! var birthday = August 14
 ! var sex      = male
-! var location = Michigan
-! var city     = Detroit
+! var location = Indore
+! var city     = Indore
 ! var eyes     = blue
 ! var hair     = light brown
 ! var hairlen  = short
 ! var color    = blue
-! var band     = Nickelback
-! var book     = Myst
-! var author   = Stephen King
+! var band     = Sur Chaitanya
+! var book     = Sukh Samwad bhag 11
+! var author   = CBKM
 ! var job      = robot
 ! var website  = www.cbkm.in
 
@@ -328,16 +328,20 @@
 
 + *
 - I'm not sure I understand you fully.
-- Please go on.
-- That is interesting. Please continue.
-- Tell me more about that.
-- Does talking about this bother you?
+//- Please go on.
+//- That is interesting. Please continue.
+//- Tell me more about that.
+//- Does talking about this bother you?
+- Don't worry there is a solution and that is take nam and be happy
 
 + [*] (sorry|apologize|apology) [*]
 - Please don't apologize.
 - Apologies are not necessary.
 - I've told you that apologies are not required.
 - It did not bother me. Please continue.
+
++ [*] (unhappy|sad|evil|upset) [*]
+- Don't worry there is a solution and that is take nam and be happy
 
 + i remember *
 - Do you often think of <star>?
